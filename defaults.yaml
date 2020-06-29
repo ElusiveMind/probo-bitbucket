@@ -5,12 +5,15 @@ hostname: 0.0.0.0
 bbWebhookUrl: '/bitbucket-webhook'
 # Bitbucket client key and client secret. These are generated for you
 # when you create a new OAuth client in Bitbucket
-#bbClientKey: 
-#bbClientSecret: 
-#bbAccessToken: 
-#bbRefreshToken: 
+bbClientKey:
+bbClientSecret:
+bbAccessToken:
+bbRefreshToken:
 
 # Settings for the API or Container Manager server
-# port
+# port. This is also the URL and port for the drupal service that
+# will take the place of the coordintor. This is basically a url to the
+# service which will provide the Bitbucket credentials and other project
+# information (such as branch builds to be considered.)
 api:
-  url: "http://localhost:3020"
+  url: http://localhost:3020
